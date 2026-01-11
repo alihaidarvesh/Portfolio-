@@ -137,4 +137,28 @@ section {
   .about-grid {
     grid-template-columns: 1fr;
   }
+}/* Reveal Animation */
+.project,
+.hero-card,
+.about-highlight {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Active Nav State */
+.nav-links a.active {
+  opacity: 1;
+  border-bottom: 2px solid currentColor;
+  padding-bottom: 0.3rem;
+}
+
+/* Project Hover (very subtle) */
+.project {
+  transition: transform 0.3s ease;
 }
